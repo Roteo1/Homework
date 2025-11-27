@@ -4,6 +4,22 @@ while x <= 30:
   if x % 2 == 1:
     print(x ** 2)
   x += 1
+N5
+a = 1
+max_a = 1
+y = x
+
+while x != 0:
+    x = int(input())
+    if x == y:
+        a += 1
+        if a > max_a:
+            max_a = a
+    else:
+        a = 1
+    y = x
+
+print(max_a)
 
 N6
 x = 0
@@ -24,3 +40,28 @@ while z != 0:
     y = z
     z = int(input())
 print(x)
+
+N8
+x = int(input())
+y = int(input())
+a = int(input())
+while a != 0:
+  if a > x:
+    y = x
+    x = a
+  a = int(input())
+print(y)
+
+N9
+o = 0
+x = int(input())
+y = int(input())
+while y != 0:
+  if y > x:
+    o = 0
+    x = y
+  else:
+    if y == x:
+      o += 1
+  y = int(input())
+print(o)
